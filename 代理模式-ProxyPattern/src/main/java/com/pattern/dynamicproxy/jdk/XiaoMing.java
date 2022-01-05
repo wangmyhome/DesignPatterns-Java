@@ -11,13 +11,9 @@ import java.lang.reflect.Proxy;
  */
 public class XiaoMing {
     public static void main(String[] args) {
-
-        //卖香水的厂商
-        ChanelFactory chanelFactory = new ChanelFactory();
-        //卖红酒的厂商
-        SellWineFactory sellWineFactory = new SellWineFactory();
-
-        SellWine sellWine = (SellWine) Proxy.newProxyInstance(sellWineFactory.getClass().getClassLoader(), sellWineFactory.getClass().getInterfaces(), new SellProxyFactory(sellWineFactory));
+        //开启代理类写入磁盘
+//        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        SellWine sellWine = (SellWine) Proxy.newProxyInstance(SellWineFactory.class.getClassLoader(), SellWineFactory.class.getInterfaces(), new SellProxyFactory(new SellWineFactory()));
         sellWine.sellRedWine();
 
         /**
@@ -26,9 +22,8 @@ public class XiaoMing {
          * InvocationHandler h：指定代理类的调用处理程序，即调用接口中的方法时，会找到该代理工厂h，执行invoke()方法
          * Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h);
          */
-        SellPerfume sellPerfume = (SellPerfume) Proxy.newProxyInstance(chanelFactory.getClass().getClassLoader(),
-                chanelFactory.getClass().getInterfaces(),
-                new SellProxyFactory(chanelFactory));
+        SellPerfume sellPerfume = (SellPerfume) Proxy.newProxyInstance(ChanelFactory.class.getClassLoader(), ChanelFactory.class.getInterfaces(), new SellProxyFactory(new ChanelFactory()));
+        //执行的是代理实例的代理方法
         sellPerfume.sellPerfume(1999.99);
     }
 

@@ -19,7 +19,7 @@ public class SellProxyFactory implements InvocationHandler {
 
     /**
      *
-     * @param proxy 代理对象
+     * @param proxy 动态生成的代理实例
      * @param method 真正执行的方法
      * @param args 执行方法的入参
      * @return
