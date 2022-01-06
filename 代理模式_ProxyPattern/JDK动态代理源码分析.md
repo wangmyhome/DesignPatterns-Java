@@ -334,15 +334,7 @@ public static byte[] generateProxyClass(final String var0, Class<?>[] var1, int 
 生成的代理类
 
 ```java
-package com.sun.proxy;
-
-import com.yk.demo.dynamicProxy.Subject;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.lang.reflect.UndeclaredThrowableException;
-
-public final class $Proxy0 extends Proxy implements Subject {
+public final class $Proxy0 extends Proxy implements SellWine {
     private static Method m1;
     private static Method m3;
     private static Method m2;
@@ -354,7 +346,7 @@ public final class $Proxy0 extends Proxy implements Subject {
 
     public final boolean equals(Object var1) throws  {
         try {
-            return ((Boolean)super.h.invoke(this, m1, new Object[]{var1})).booleanValue();
+            return (Boolean)super.h.invoke(this, m1, new Object[]{var1});
         } catch (RuntimeException | Error var3) {
             throw var3;
         } catch (Throwable var4) {
@@ -362,9 +354,9 @@ public final class $Proxy0 extends Proxy implements Subject {
         }
     }
 
-    public final void doSomething() throws  {
+    public final void sellRedWine() throws  {
         try {
-          	//执行的就是实现InvocationHandler的代理类中的invoke方法
+          //执行的就是实现InvocationHandler的代理类中的invoke方法
             super.h.invoke(this, m3, (Object[])null);
         } catch (RuntimeException | Error var2) {
             throw var2;
@@ -385,7 +377,7 @@ public final class $Proxy0 extends Proxy implements Subject {
 
     public final int hashCode() throws  {
         try {
-            return ((Integer)super.h.invoke(this, m0, (Object[])null)).intValue();
+            return (Integer)super.h.invoke(this, m0, (Object[])null);
         } catch (RuntimeException | Error var2) {
             throw var2;
         } catch (Throwable var3) {
@@ -396,7 +388,7 @@ public final class $Proxy0 extends Proxy implements Subject {
     static {
         try {
             m1 = Class.forName("java.lang.Object").getMethod("equals", Class.forName("java.lang.Object"));
-            m3 = Class.forName("com.yk.demo.dynamicProxy.Subject").getMethod("doSomething");
+            m3 = Class.forName("com.pattern.dynamicproxy.jdk.SellWine").getMethod("sellRedWine");
             m2 = Class.forName("java.lang.Object").getMethod("toString");
             m0 = Class.forName("java.lang.Object").getMethod("hashCode");
         } catch (NoSuchMethodException var2) {
@@ -406,11 +398,18 @@ public final class $Proxy0 extends Proxy implements Subject {
         }
     }
 }
-
-
 ```
 
 
+
+### 为什么jdk动态代理必须基于接口
+
+原因如下： 
+1、生成的代理类继承了Proxy，由于java是单继承，所以只能实现接口，通过接口实现 
+
+2、从代理模式的设计来说，充分利用了java的多态特性，也符合基于接口编码的规范 
+
+参考：https://segmentfault.com/a/1190000021821314
 
 ### 代理类为什么要重写equals、toString与hashCode方法
 

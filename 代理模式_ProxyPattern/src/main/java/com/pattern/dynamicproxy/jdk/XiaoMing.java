@@ -12,7 +12,7 @@ import java.lang.reflect.Proxy;
 public class XiaoMing {
     public static void main(String[] args) {
         //开启代理类写入磁盘
-//        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         SellWine sellWine = (SellWine) Proxy.newProxyInstance(SellWineFactory.class.getClassLoader(), SellWineFactory.class.getInterfaces(), new SellProxyFactory(new SellWineFactory()));
         sellWine.sellRedWine();
 
