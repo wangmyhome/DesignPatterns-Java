@@ -1,7 +1,7 @@
-package com.pattern.dclsingleton;
+package com.pattern.lazysingleton;
 
 /**
- * 双重检查锁
+ * 2-4双重检查锁（推荐使用）
  * 线程安全；延迟加载；效率较高
  * 结论：在实际开发中，推荐使用这种单例设计模式
  * @author 王山鹏 (shanpeng.wang@transsion.com)

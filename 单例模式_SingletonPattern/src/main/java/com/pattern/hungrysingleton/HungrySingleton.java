@@ -1,7 +1,7 @@
 package com.pattern.hungrysingleton;
 
 /**
- * 饿汉式
+ * 饿汉式：1-1静态常量
  * 在类加载的时候实例化并加载到内存，只会被实例化一次。
  * 线程安全
  * @author 王山鹏 (shanpeng.wang@transsion.com)

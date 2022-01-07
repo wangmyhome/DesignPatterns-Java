@@ -1,7 +1,7 @@
 package com.pattern.lazysingleton;
 
 /**
- * 懒汉式
+ * 2-1懒汉式：（不安全，不推荐使用）
  * 只有在真正去使用的时候才回去加载
  *
  * 线程不安全：

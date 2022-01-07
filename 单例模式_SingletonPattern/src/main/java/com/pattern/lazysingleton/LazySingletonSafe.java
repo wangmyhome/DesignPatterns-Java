@@ -1,8 +1,7 @@
 package com.pattern.lazysingleton;
 
 /**
- * 懒汉式
- * 线程安全
+ * 2-2懒汉式（方法同步，线程安全）[不推荐使用]
  * @author 王山鹏 (shanpeng.wang@transsion.com)
  * @since 2022-01-06
  */
