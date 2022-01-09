@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.pattern.methodfactory</OriginalElement>
+  <nodes>
+    <node x="-70.52281746031747" y="283.0">com.pattern.methodfactory.MethodFactory</node>
+    <node x="-101.0" y="67.5">com.pattern.smplefactory.IPhone</node>
+    <node x="36.95436507936509" y="67.5">com.pattern.smplefactory.MiPhone</node>
+    <node x="-70.52281746031744" y="435.0">com.pattern.methodfactory.ClientMethodTest</node>
+    <node x="36.95436507936509" y="188.0">com.pattern.methodfactory.XiaoMiFactory</node>
+    <node x="-178.0" y="188.0">com.pattern.methodfactory.AppleFactory</node>
+    <node x="-36.02281746031747" y="-47.0">com.pattern.smplefactory.Phone</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.pattern.methodfactory.ClientMethodTest" target="com.pattern.methodfactory.AppleFactory" relationship="CREATE">
+      <point x="-95.0" y="0.0" />
+      <point x="-100.0" y="450.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.pattern.smplefactory.MiPhone" target="com.pattern.smplefactory.Phone" relationship="REALIZATION">
+      <point x="-3.6507936508201055E-4" y="-15.0" />
+      <point x="96.95400000000001" y="26.0" />
+      <point x="40.5" y="26.0" />
+      <point x="40.5" y="-17.0" />
+      <point x="-14.97718253968253" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.MethodFactory" target="com.pattern.smplefactory.Phone" relationship="DEPENDENCY">
+      <point x="-1.8253968253034714E-4" y="-15.0" />
+      <point x="14.977" y="161.0" />
+      <point x="14.97718253968253" y="161.0" />
+      <point x="14.97718253968253" y="-17.0" />
+      <point x="0.02281746031746934" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.XiaoMiFactory" target="com.pattern.smplefactory.MiPhone" relationship="CREATE">
+      <point x="0.0" y="-15.0" />
+      <point x="22.0" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.ClientMethodTest" target="com.pattern.methodfactory.XiaoMiFactory" relationship="CREATE">
+      <point x="95.0" y="0.0" />
+      <point x="148.9543650793651" y="450.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.AppleFactory" target="com.pattern.smplefactory.IPhone" relationship="CREATE">
+      <point x="-52.0" y="-15.0" />
+      <point x="-152.0" y="203.0" />
+      <point x="-83.0" y="203.0" />
+      <point x="-83.0" y="97.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.AppleFactory" target="com.pattern.smplefactory.Phone" relationship="DEPENDENCY">
+      <point x="74.5" y="-15.0" />
+      <point x="-48.0" y="188.0" />
+      <point x="-48.0" y="161.0" />
+      <point x="15.0" y="161.0" />
+      <point x="0.02281746031746934" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.ClientMethodTest" target="com.pattern.methodfactory.MethodFactory" relationship="DEPENDENCY">
+      <point x="-9.500000000000028" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.XiaoMiFactory" target="com.pattern.methodfactory.MethodFactory" relationship="REALIZATION">
+      <point x="-25.97718253968256" y="15.0" />
+      <point x="78.0" y="-15.0" />
+    </edge>
+    <edge source="com.pattern.smplefactory.IPhone" target="com.pattern.smplefactory.Phone" relationship="REALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="-48.0" y="26.0" />
+      <point x="0.0" y="26.0" />
+      <point x="-14.97718253968253" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.XiaoMiFactory" target="com.pattern.smplefactory.Phone" relationship="DEPENDENCY">
+      <point x="-35.95436507936509" y="-15.0" />
+      <point x="83.0" y="161.0" />
+      <point x="15.0" y="161.0" />
+      <point x="0.02281746031746934" y="15.0" />
+    </edge>
+    <edge source="com.pattern.methodfactory.AppleFactory" target="com.pattern.methodfactory.MethodFactory" relationship="REALIZATION">
+      <point x="36.97718253968253" y="15.0" />
+      <point x="-44.02281746031747" y="218.0" />
+      <point x="-44.02281746031747" y="283.0" />
+      <point x="-78.0" y="-15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="170.0" y="269.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
