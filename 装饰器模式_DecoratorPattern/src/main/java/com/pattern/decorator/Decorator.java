@@ -5,7 +5,15 @@ package com.pattern.decorator;
  * @author 王山鹏 (shanpeng.wang@transsion.com)
  * @since 2022-01-10
  */
-public abstract class Decorator {
+public class Decorator extends Component{
+    private Component component;
 
-    abstract void operation();
+    public Decorator(Component component){
+        this.component = component;
+    }
+
+    @Override
+    void operation() {
+        component.operation();
+    }
 }

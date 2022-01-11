@@ -7,7 +7,6 @@ package com.pattern.decorator;
  */
 public class ConcreteComponent extends Component{
 
-    Decorator decorator;
 
     @Override
     void operation() {
