@@ -10,7 +10,6 @@ public class ClientTest {
         ICuisine guangDoneCuisine = new GuangDoneCuisine(new GuangDongCook());
         JiangSuCuisine jiangSuCuisine = new JiangSuCuisine(new JiangSuCook());
         ShanDongCuisine shanDongCuisine = new ShanDongCuisine(new ShanDongCook());
-
         // 点单
         XiaoEr xiaoEr = new XiaoEr();
         xiaoEr.order(guangDoneCuisine);
