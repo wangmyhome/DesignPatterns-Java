@@ -4,6 +4,8 @@
 
 > 编写软件过程中，程序员面临着来自耦合性，内聚性以及可维护性，可扩展性，重用性，灵活性 等多方面的挑战，设计模式是为了让程序(软件)更好的维护
 
+![设计模式](/Users/wangshanpeng/IdeaProjects/learn/DesignPatterns-Java/工厂模式_FactoryPattern/img/设计模式.png)
+
 ## 设计模式的目标
 
 - **代码重用性** ：相同功能的代码，不用多次编写
@@ -16,19 +18,26 @@
 
 > 软件系统设计时所要遵循的一些经验准则
 
-开闭原则（Open Close Principle）
+- 开闭原则（Open Close Principle）
 
-单一职责原则（Single responsibility principle）
 
-依赖倒转原则（Dependence Inversion Principle）
+- 单一职责原则（Single responsibility principle）
 
-接口隔离原则（Interface Segregation Principle）
 
-里氏替换原则（Liskov Substitution principle）
+- 依赖倒转原则（Dependence Inversion Principle）
 
-迪米特法原则（The Least Knowledge Principle）
 
-合成复用原则（Composite Reuse Principle）
+- 接口隔离原则（Interface Segregation Principle）
+
+
+- 里氏替换原则（Liskov Substitution principle）
+
+
+- 迪米特法原则（The Least Knowledge Principle）
+
+
+- 合成复用原则（Composite Reuse Principle）
+
 
 
 
@@ -75,3 +84,9 @@
 访问者模式（Visitor Pattern）
 
 模板方法模式（Template Method Pattern）
+
+解释器模式（InterpreterPattern）
+
+
+
+脑图地址：https://www.processon.com/view/link/61dfe569e401fd06a8ca0e3e#map
