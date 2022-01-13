@@ -43,49 +43,54 @@
 
 ## 创建型（Creational）
 
-单例模式（Singleton Pattern）  
+- [x] [单例模式（Singleton Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F_SingletonPattern)  
 
-工厂模式（Factory Pattern）
+- [x] [工厂模式（Factory Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F_FactoryPattern)
 
-建造者模式（Builder Pattern） 
+- [x] [建造者模式（Builder Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F_BuilderPattern) 
 
-原型模式（Prototype Pattern）
+- [x] [原型模式（Prototype Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F_PrototypePattern)
 
 ## 结构型（Structural）
 
-适配器模式（Adapter Pattern）
+- [x] [适配器模式（Adapter Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F_DecoratorPattern)
 
-桥接模式（Bridge Pattern）
+- [x] [桥接模式（Bridge Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F_BridgePattern)
 
-装饰器模式（Decorator Pattern）
+- [x] [装饰器模式（Decorator Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F_DecoratorPattern)
 
-外观模式（Facade Pattern）
+- [x] [外观模式（Facade Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F_FacadePattern)
 
-享元模式（Flyweight Pattern）
+- [x] [享元模式（Flyweight Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F_FlyweightPattern)
 
-代理模式（Proxy Pattern）
+- [x] [代理模式（Proxy Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F_ProxyPattern)
 
 ## 行为型（Behavioral）
 
-责任链模式（Chain of Responsibility Pattern）
+- [x] [责任链模式（Chain of Responsibility Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F_ChainofResponsibilityPattern)
 
-命令模式（Command Pattern） 
+- [x] [命令模式（Command Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F_CommandPattern) 
 
-迭代器模式（Iterator Pattern）
+- [x] [迭代器模式（Iterator Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F_IteratorPattern)
 
-备忘录模式（MementPattern） 
+- [ ] 备忘录模式（MementPattern） 
 
-观察者模式（Observer Pattern）
 
-状态模式（State Pattern）
+- [ ] 观察者模式（Observer Pattern）
 
-策略模式（Strategy Pattern）
 
-访问者模式（Visitor Pattern）
+- [ ] 状态模式（State Pattern）
 
-模板方法模式（Template Method Pattern）
 
-解释器模式（InterpreterPattern）
+- [x] [策略模式（Strategy Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F_StrategyPattern)
+
+- [ ] 访问者模式（Visitor Pattern）
+
+
+- [x] [模板方法模式（Template Method Pattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F_TemplateMethodPattern)
+
+- [x] [解释器模式（InterpreterPattern）](https://github.com/wangmyhome/DesignPatterns-Java/tree/main/%E8%A7%A3%E9%87%8A%E5%99%A8%E6%A8%A1%E5%BC%8F_InterpreterPattern)
+- [ ] 中介者模式（Mediator Pattern）
 
 
 
