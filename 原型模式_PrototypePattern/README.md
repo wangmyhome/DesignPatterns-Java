@@ -136,3 +136,8 @@ public class Sheep implements Cloneable{
 这是java中的规定，cloneable接口中什么也没有，只当作一个标记。当实现了这个接口，执行这个类的clone方法，就相当于告诉了java，去执行object中的clone方法。
 
 原型模式的性能不比直接new出来的对象性能高多少，就是代码简洁了一些。开发中很少用到。
+
+部分代码检查器会有这个提示
+//Remove this "clone" implementation; use a copy constructor or copy factory instead.
+//删除此“克隆”实现；请改用复制构造函数或复制工厂。
+http://www.javashuo.com/article/p-otvrvbcx-hu.html
